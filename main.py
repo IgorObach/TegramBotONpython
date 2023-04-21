@@ -15,6 +15,8 @@ def get_user_text(message):
             bot.send_message(message.chat.id, 'И тебе привет ёпта')
     elif message.text == "id":
             bot.send_message(message.chat.id, f"твой ID:, {message.from_user.id}")
+    elif message.text == "Как ты?":
+            bot.send_message(message.chat.id, 'Бодро')
     elif message.text == "Имя":
             bot.send_message(message.chat.id, f"твое имя, {message.from_user.first_name} опять напился?")
     else : bot.send_message(message.chat.id, f"Насяльника нэ панимаю")
